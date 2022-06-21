@@ -1,0 +1,203 @@
+Results from Algorithm
+---------------------------------------
+-- 17.5.2022
+
+Processing Time find first point:0.000996
+1200 750
+Processing Time find_circumferencePoints:0.016955
+Points found:
+549
+Processing Time for calculation:0.000996
+1246.291720985208 762.3567227361565
+
+real subpixles center:
+Xc=1246 +  5/16  = 1246. 3125
+Yc=762  +  7/16  = 762.4375
+
+
+dx=-0.0211   pixle  =~ 1 subpixles
+dy= 0.0808  pixles  =~ 1.3 subpixles
+
+---------------------
+Processing Time find first point:0.005984
+2700 1200
+Processing Time find_circumferencePoints:0.015990
+Points found:
+622
+Processing Time for calculation:0.000997
+2789.098902751329 1243.1031060024168
+real subpixles center:
+# Xc=2789 +  2/16  = 2789. 1250
+# Yc=1243  +  4/16  = 1243.2500
+dx=-0.0261   pixle  =~ 1 subpixles
+dy= 0.1469  pixles  =~ 2 subpixles
+
+-------------------------- 
+--18.5.2022   Test 1
+Processing Time find first point:0.000000
+750 1050
+Processing Time find_circumferencePoints:0.014988
+Points found:
+793
+Processing Time for calculation:0.000998
+846.298911033289 1127.329348967035
+
+real subpixles center:
+# Xc=846 +  5/16  = 846. 3125
+# Yc=1127  +  7/16  = 1127.4375
+
+dx=-0.0136   pixle  < 1 subpixles
+dy= 0.1082  pixles  < 2 subpixles
+
+
+--- 18.5.2022  Test 2 after adding Rc
+Processing Time find first point:0.000996
+750 1050
+Processing Time find_circumferencePoints:0.014983    
+Points found:
+793
+Processing Time for calculation:0.000998
+846.298911033289 1127.329348967035 140.29845759531182
+
+real subpixles center:
+# Xc=846 +  5/16  = 846. 3125
+# Yc=1127  +  7/16  = 1127.4375
+Rc=140   + 3/16   = 140  . 1875
+
+dx=-0.0136   pixle  < 1 subpixles
+dy= 0.1082   pixles  < 2 subpixles
+dr= 0.1109   pixles  <2 subpixles
+
+---- with gradient
+Processing Time find first point:0.000000
+750 1050
+Processing Time find_circumferencePoints:0.024962     
+Points found:
+797
+Processing Time for calculation:0.003990
+846.2956160481563 1127.3316752754517 140.8628193237123
+
+real subpixles center:
+# Xc=846   +  5/16  = 846. 3125
+# Yc=1127  +  7/16  = 1127.4375
+# Rc=140   +  3/16   = 140  . 1875
+
+dx=  0.0169   pixle   < 1 subpixles
+dy= -0.1059  pixles   < 2 subpixles
+dr=  0.6753   pixles  < 10 subpixles ?  because Rc depend on Xc and Yc in equation
+
+----------------------------
+Processing Time find first point:0.003989
+2400 1350
+Processing Time find_circumferencePoints:0.016954     
+Points found:
+552
+Processing Time for calculation:0.001995
+2483.129979925823 1401.1854070185325 97.73341858557599
+
+# Xc=2483 +  2/16  = 2483. 1250
+# Yc=1401  +  4/16  = 1401.2500
+# Rc=97   + 1/16   = 97  . 0625
+
+dx= -0.0049 pixle   < 1 subpixles
+dy= 0.0646 pixles   = 1 subpixles
+dr= -0.6709 pixles  = 10 subpixles ?   
+
+---------------------
+Processing Time find first point:0.010631
+2400 1350
+Processing Time find_circumferencePoints:0.015958     
+Points found:
+550
+Processing Time for calculation:0.002993
+2483.107270017451 1401.1557714069347 97.26544163570739
+
+# Xc=2483 +  2/16  = 2483. 1250
+# Yc=1401  +  4/16  = 1401.2500
+# Rc=97   + 1/16   = 97  . 0625
+
+------------------------------------------------------------
+--19.05.2022
+
+tests for real values
+# Xc=2483  +  2/16  = 2483. 1250
+# Yc=1401  +  4/16  = 1401.2500
+# Rc=97    +  1/16  = 97  . 0625
+
+# Test 1 Noise 10% 
+Processing Time find first point:0.003989
+2400 1360
+Processing Time find_circumferencePoints:0.009974
+Points found:
+548
+Processing Time for calculation:0.000997
+2483.0974940283177 1401.1602372818495 97.00931498894535
+
+# Test 2 Noise 20%
+Processing Time find first point:0.004987
+2400 1360
+Processing Time find_circumferencePoints:0.009974      
+Points found:
+548
+Processing Time for calculation:0.000000
+2483.0878019169245 1401.1781350129004 97.02318816830845
+
+
+-------------------------------------------------------
+20.06.2022
+Program:  Camera Resolver Class
+Version:  1.3.2
+Update_:  06.06.2022
+Results Circle Parameters:
+                Xc     2483.0878
+                Yc     1401.1781
+                Rc     97.0232
+                Points 548
+                Time   0.018948793
+
+
+using filer
+
+Program:  Camera Resolver Class
+Version:  1.3.2
+Update_:  06.06.2022
+Results Circle Parameters:
+                Xc     2483.4302
+                Yc     1408.6435
+                Rc     97.1413
+                Points 275
+                Time   0.019946098
+
+Program:  Camera Resolver Class
+Version:  1.3.2
+Update_:  06.06.2022
+Results Circle Parameters:
+                Xc     2483.6185
+                Yc     1396.2104
+                Rc     96.6434
+                Points 131
+                Time   0.019727945
+
+Program:  Camera Resolver Class
+Version:  1.3.2
+Update_:  06.06.2022
+Results Circle Parameters:
+                Xc     2483.6834
+                Yc     1397.3251
+                Rc     96.8062
+                Points 134
+                Time   0.019918203
+
+Program:  Camera Resolver Class
+Version:  1.3.2
+Update_:  06.06.2022
+Results Circle Parameters:
+                Xc     2482.9420
+                Yc     1396.6731
+                Rc     97.2261
+                Points 134
+                Time   0.019223213
+
+
+
+
